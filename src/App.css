@@ -1,0 +1,145 @@
+/* =======================
+   App.css - Full Stylish CSS
+   ======================= */
+
+/* General Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #eef2f7;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background: #1e3a8a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Container */
+.container {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+/* Task Form */
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.task-form input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.5);
+}
+
+.task-form button {
+  padding: 12px 25px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.task-form button:hover {
+  background: #1d4ed8;
+}
+
+/* Task List */
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  background: #f9fafb;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.task-list li:hover {
+  background: #f3f4f6;
+  transform: translateY(-2px);
+}
+
+/* Task Done */
+.done {
+  text-decoration: line-through;
+  color: #6b7280;
+}
+
+/* Task Buttons */
+.task-buttons button {
+  margin-left: 10px;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.task-buttons button:first-child {
+  background: #10b981;
+  color: white;
+}
+
+.task-buttons button:first-child:hover {
+  background: #059669;
+}
+
+.task-buttons button:last-child {
+  background: #ef4444;
+  color: white;
+}
+
+.task-buttons button:last-child:hover {
+  background: #dc2626;
+}
+
+/* Task Title and Assignee */
+.task-list li div:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-list li div:first-child strong {
+  font-size: 1.15rem;
+  color: #111827;
+}
+
+.task-list li div:first-child em {
+  font-size: 0.95rem;
+  color: #6b7280;
+}
